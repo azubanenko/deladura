@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name ="description" content ="Welcome to the most ordinary hotel in Boston Massachusetts">
+  <meta name="keywords" content="hotel, boston">
+  <link rel="stylesheet" href="/css/style.css" href="/css/mobile.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/mobile.css" media="screen and (max-width: 500px)">
+
+  <title>Welcome to Delaware Durables</title>
+</head>
+<body class = "all-page">
+  <header>
+    <div id="logo">
+      <div class="container" href="index.html"></div>
+    </div>
+  </header>
+
+  <section id="buttons-section" class="buttons">
+    <div id ="btn1" class="btn">
+      <a href="about.html" >Leave us a review on amazon <br> (it helps us out a lot)!</a>
+    </div>
+    <div id ="btn2" class="btn">
+      <a >Reorder with a 20% discount</a>
+    </div>
+    <div id ="btn3" class="btn">
+      <a href="https://delawaredurables.com" >Proceed to DELAWAREDURABLES.COM</a>
+    </div>
+  </section>
+
+  <section>
+    <div id ="popup-overlay">
+      <div id ="popup-content">
+        <div class ="button-close"></div>
+        <h1 class="promo-name">SAVE 20% ON YOUR NEXT PURCHASE</h1>
+        <p class="promo-content">Enter the coupon code and get a discount on your next order.</p>
+        <p class = "promo-code">WINTER 2020</p>
+        <section id="popup-buttons">
+          <button id ="save-code-button" class="btn-promo">SAVE CODE</button>
+          <button id ="shop-button" class="btn-promo">SHOP</button> 
+        </section>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("popup-overlay");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("btn2");
+    
+    // Get the <span> element that closes the modal 
+      var span = document.getElementsByClassName("button-close")[0];
+      
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+    
+
+  
+</body>
+</html>

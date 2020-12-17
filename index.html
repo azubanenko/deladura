@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name ="description" content ="the finest quality kitchen equipment">
+  <meta name="keywords" content="sponges, dishwand, kitchen">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+  integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+  crossorigin="anonymous"
+/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/mobile.css" media="screen and (max-width: 500px)">
+  <script src="mobileMenu.js"></script>
+  <script src="slideshow.js"></script>
+
+  <title>Welcome to Delaware Durables</title>
+</head>
+<body id=home>
+    <header class="main-header">
+      <div id="navbar" class="navbar top">
+        <div id ="menu-icon">
+          
+        </div>
+        <div id="logo-main">
+          <div class="container-main" href="#top"></div>
+        </div>        
+        
+        <nav id="menu">
+          <ul id="desktop-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#durablesets">Durable Sets</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <button id="openpromo1" class="discount" >20% discount</button>
+          </ul>
+        </nav>
+      </div>
+
+      <section id ="mobile-menu">
+        <div id="popup-overlay-menu">
+          <div class ="menu-close"></div>
+            <div  class = "content">
+              <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#durablesets">Durable Sets</a></li>
+              <li><a href="#reviews">Reviews</a></li>
+              <button id="openpromo2"class="discount">20% discount</button>
+              </ul>
+            </div>
+        </div>
+      </section>
+
+      <script>
+        var mobmenu = document.getElementById("mobile-menu");
+      
+      // Get the button that opens the modal
+        var openmenu = document.getElementById("menu-icon");
+      
+      // Get the <span> element that closes the modal 
+        var clmenu = document.getElementsByClassName("menu-close")[0];
+        
+      // When the user clicks the button, open the modal 
+      openmenu.onclick = function() {
+        mobmenu.style.display = "block";
+      }
+      
+      // When the user clicks on <span> (x), close the modal
+      clmenu.onclick = function() {
+        mobmenu.style.display = "none";
+      }
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == mobmenu) {
+          mobmenu.style.display = "none";
+        }
+      }
+    </script> 
+    </header>
+    
+    <div id="main" class ="flex-columns">
+        <div id="header-1" class="row">
+          <div class="column">
+            
+            <div class="column1">
+              <h1 id="heading1" class="heading-main">Happiness to the <br> whole family</h1>
+              <p class="p1">The finest quality kitchen and household  cleaning goods.</p>
+              <div id="button-section2">
+
+                <button id ="discount-button">20% discount</button>
+                <div id ="btn2-main" class="btn-main">
+                  <div id="icon">
+                    <div class="container-icon"> <a href="https://youtube.com"> </a></div>
+                  </div>    
+                  <a href="https://youtube.com">Products</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+      </div>
+
+
+  <main>
+    <section id="durablesets" >
+      <div id ="videos-name">
+        <h1 id="heading-video">Durable Sets <br>in action</h1>
+      </div>
+
+      <div id="videos" class="flex-items">
+        <div class = "setsSection">
+          <div id="img1-videos" class="videos-img"></div>
+          <div id="icon1" class="videos-icon">
+            <i class="fas fa-play-circle"></i>
+          </div>
+          <h1 class="videos-nm">How to use</h1>
+          <p class="videos-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, velit!</p>
+        </div>
+        <div class = "setsSection">
+          <div id="img2-videos" class="videos-img"></div>
+          <div id="icon2" class="videos-icon">
+            <i class="fas fa-play-circle"></i>
+          </div>
+          <h1 class="videos-nm">How to use</h1>
+          <p class="videos-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, velit!</p>
+        </div>
+        <div class = "setsSection">
+          <div id="img3-videos" class="videos-img"></div>
+          <div id="icon3" class="videos-icon">
+            <i class="fas fa-play-circle"></i>
+          </div>
+          <h1 class="videos-nm">How to use</h1>
+          <p class="videos-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, velit!</p>
+        </div>
+        <div class = "setsSection">
+          <div id="img4-videos" class="videos-img"></div>
+          <div id="icon4" class="videos-icon">
+            <i class="fas fa-play-circle"></i>
+          </div>
+          <h1 class="videos-nm">How to use</h1>
+          <p class="videos-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, velit!</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about">
+      <div id ="about-name">
+        <h1 clas="heading-main">About us</h1>
+      </div>
+
+      <div id="about-desc" class ="flex-columns">
+          <div class="row">
+              <div class="column">
+                  <div class="column1">
+                    <img id="image1" src="images/aboutus1.jpg" alt="">
+                  </div>
+              </div>
+
+              <div class="column">
+                <div class="column2">
+                  <p id="about-des1">Delaware Durables was founded by two friends, Ry and Bob, fed up with the quality of kitchen cleaning equipment that they seemed to always be getting. 
+                    Whether buying online or in-store, their expectations were rarely met when it came to the durability and longevity of products bought.
+                    </p>
+                </div>
+              </div>
+          </div>
+
+          <div id ="row-reverse" class="row">
+            <div class="column">
+              <div class="column2">
+                <p id="about-des1">Working on the axiom that if they were both having that experience, there must be countless others out there just like them, who want higher quality offerings for their every day products!
+                  </p>
+              </div>
+            </div>
+            <div class="column">
+                <div class="column1">
+                  <img src="images/aboutus2.jpg" alt="">
+                </div>
+            </div>
+          </div>
+        </div>
+      <div id="spacer-2"></div>
+    </section>
+
+    <section id="reviews" >
+    <div id="reviews-main">
+      <div id ="reviews-name">
+        <h1 clas="heading-main">Reviews</h1>
+      </div>
+
+    <div class="slideshow-container shadow">
+      <!-- Box with number and caption text -->
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <div class="text">Couldn't be happier, bought the Durable Kitchen Set and it is actually really good quality. I feel like the listing description actually matches the product.</div>
+        <div class="customer">Derrek, Ohio <div class="date">Purchased Sept. 2020 </div> </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <div class="text">Simple sponge replacement twist and click. Doesnt leak. So far so good.</div>
+        <div class="customer">Stephanie, New York <div class="date">Purchased Sept. 2020 </div> </div>
+
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <div class="text">There were a lot of these on amazon, the pictures of this one looked like the best quality, and I've only had it for a week but it also is holding up like a really good quality item. The name suits it :D</div>
+        <div class="customer">Alex, New York <div class="date">Purchased Sept. 2020</div> </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <div class="text">I love the packaging! the dish wand is really good and there are lots of little thoughtful touches. Will definitely be buying again when I need replacement sponges.</div>
+        <div class="customer">Lina, Chicago <div class="date">Purchased Oct. 2020</div> </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <div class="text">I have been using for two weeks, it still doesnt leaks, so time to leave a review! Thank you for producing something that is actually as good as your listing says it is. </div>
+        <div class="customer">Phoebe, Seattle <div class="date">Purchased Sept. 2020</div></div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    </div>
+    </section>
+
+
+    <section>
+      <div id ="popup-main">
+        <div id ="popup-content">
+          <div class ="close-main"></div>
+          <h1 class="promo-name">SAVE 20% ON YOUR NEXT PURCHASE</h1>
+          <p class="promo-content">Enter the coupon code and get a discount on your next order.</p>
+          <input type="text" value="WINTER 2020" id="promo-code">
+          <!-- <p id = "promo-code">WINTER 2020</p> -->
+          <section id="popup-buttons">
+            <button id ="save-code-button" class="btn-promo" onclick="myFunction()">SAVE CODE</button>
+            <button id ="shop-button" class="btn-promo">SHOP</button> 
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div id="footer1">
+        <div id="p1-footer">
+          <h1 class="footer-heading">GET A 20% DISCOUNT</h1>
+          <p class="footer-text">Order now and get a 20% discount on our durable kitchen set</p>
+          <button id="order-footer" class="openpromo">ORDER NOW</button>
+        </div>
+        <div id="p2-footer">
+          <h1 class="footer-heading">COMMITED TO QUALITY</h1>
+          <p class="footer-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias recusandae nisi aliquam voluptate commodi possimus, distinctio sunt! Sed!</p>
+        </div>
+        <div id="p3-footer" href="#top">
+        </div>
+        <div id="p4-footer">
+          <h1 id="navigate-heading" class="footer-heading">NAVIGATE</h1>
+          <div id="footer-nav">
+          <a href="#about">About</a>
+          <a  href="#durablesets">Durable Sets</a>
+          <a  href="#reviews">Reviews</a>
+        </div>
+        </div>
+      </div>
+  
+      <div id="footer2">
+        <h1 id ="text-bottom"> © 2020 Delaware Durables | All rights reserved</h1>
+      </div>
+  
+  
+    </footer>
+
+  <script>
+    // Get the modal
+    var luna = document.getElementById("popup-main");
+
+    var abra = document.getElementById("order-footer");
+    var abra2 = document.getElementById("openpromo1");
+    var abra3 = document.getElementById("openpromo2");
+    var abra4 = document.getElementById("discount-button");
+    
+    // Get the <span> element that closes the modal 
+    var dert = document.getElementsByClassName("close-main")[0];
+
+       // When the user clicks the button, open the modal 
+    abra.onclick = function() {
+    luna.style.display = "block";}
+
+    abra2.onclick = function() {
+    luna.style.display = "block";}
+
+    abra3.onclick = function() {
+    luna.style.display = "block";}
+
+    abra4.onclick = function() {
+    luna.style.display = "block";}
+    
+    
+    // When the user clicks on <span> (x), close the modal
+    dert.onclick = function() {
+    luna.style.display = "none";
+}
+
+</script>
+<script>
+  function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("promo-code");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+
+
+  </main>
+
+
+<script src="mobileMenu.js"></script>
+</body>
+</html>
